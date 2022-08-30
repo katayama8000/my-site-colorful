@@ -1,22 +1,28 @@
 <header></header>
-<main class="bg-black">
+<main class="{{ bgColor }} px-4 py-14 sm:p-20">
   <div class="max-w-xl m-auto text-white">
     <div class="pb-10">
-      <div class="h-[100px] w-[100px] rounded-full bg-green-600"></div>
-      <div class="pt-10 text-3xl font-bold text-white">Tatsuhumi Katayama</div>
-      <div class="pt-4 font-bold">I am a engineer based in Nagoya/Japan.</div>
+      <div class="h-[100px] w-[100px] rounded-full {{ circleColor }}"></div>
+      <div class="pt-10 text-3xl font-bold {{ color }}">Tatsuhumi Katayama</div>
+      <div class="pt-4 font-bold {{ color }}">
+        I am a engineer based in Nagoya/Japan.
+      </div>
     </div>
+    <div (click)="handleChangeColor('#004B27', '#3AC24E')">パターン１</div>
+    <div>パターン２</div>
+    <div>パターン３</div>
     <hr class="py-10" />
-    <ul>
-      <li>About</li>
-      <li>Note</li>
-      <li>Qiita</li>
-      <li>Zenn</li>
-      <li>Works</li>
-      <li>Git hub</li>
-      <li>My Comunity</li>
-      <li>Contact</li>
+    <ul *ngFor="let title of titles">
+      <app-title
+        [title]="title.title"
+        [description]="title.description"
+        [url]="title.url"
+        [color]="color"
+      ></app-title>
     </ul>
   </div>
 </main>
-<footer></footer>
+<footer class="{{ bgColor }}">
+  <hr />
+  <div class="p-5 text-center {{ color }}">&copy;2022 katayama8000</div>
+</footer>

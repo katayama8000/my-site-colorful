@@ -1,6 +1,6 @@
 ## my-site-colorful
 
-####stack
+### Stack
 
 - Angular
 - tailwind.css
