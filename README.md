@@ -1,7 +1,7 @@
-### Angular-Material-tailwinidでアプリを作るときのスターターキット
+## my-site-colorful
 
-#### 都度改善していく
+####stack
 
-```bash
-yarn create next-app --example https://github.com/katayama8000/Angular-Material-tailwinid-BASIC
-```
+- Angular
+- tailwind.css
+- typescript
