@@ -8,9 +8,29 @@
         I am a engineer based in Nagoya/Japan.
       </div>
     </div>
-    <div (click)="handleChangeColor('#004B27', '#3AC24E')">パターン１</div>
-    <div>パターン２</div>
-    <div>パターン３</div>
+    <div class="flex justify-between">
+      <div
+        (click)="
+          handleChangeColor('text-[#004B27]', 'bg-[#004B27]', 'bg-[#3AC24E]')
+        "
+      >
+        パターン１
+      </div>
+      <div
+        (click)="
+          handleChangeColor('text-[#F8CC16]', 'bg-[#F8CC16]', 'bg-[#002D75]')
+        "
+      >
+        パターン２
+      </div>
+      <div
+        (click)="
+          handleChangeColor('text-[#1AC7DA]', 'bg-[#1AC7DA]', 'bg-[#09345C]')
+        "
+      >
+        パターン３
+      </div>
+    </div>
     <hr class="py-10" />
     <ul *ngFor="let title of titles">
       <app-title
