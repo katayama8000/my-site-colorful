@@ -9,6 +9,7 @@ export class TitleComponent implements OnInit {
   @Input() description!: string;
   @Input() url?: string;
   @Input() color?: string;
+  @Input() routerLink?: string;
 
   constructor() {}
 

@@ -16,8 +16,13 @@ export class AppComponent {
     description: string;
     url?: string;
     color?: string;
+    routerLink?: string;
   }[] = [
-    { title: 'About', description: 'Brief introduction about me' },
+    {
+      title: 'About',
+      description: 'Brief introduction about me',
+      routerLink: 'about',
+    },
     {
       title: 'Note',
       description: 'Anything blog',
@@ -33,7 +38,7 @@ export class AppComponent {
       description: 'Teck blog',
       url: 'https://zenn.dev/tattu',
     },
-    { title: 'Works', description: 'What I have build' },
+    { title: 'Works', description: 'What I have build', routerLink: 'work' },
     {
       title: 'Git hub',
       description: 'I try to write code everyday',

@@ -6,10 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TitleComponent } from './title/title.component';
+import { WorkComponent } from './work/work.component';
 
 
 @NgModule({
-  declarations: [AppComponent, TitleComponent],
+  declarations: [AppComponent, TitleComponent, WorkComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
