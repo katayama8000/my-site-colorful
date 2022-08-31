@@ -10,23 +10,26 @@
     </div>
     <div class="flex justify-between">
       <div
-        (click)="
+        (mouseenter)="
           handleChangeColor('text-[#004B27]', 'bg-[#004B27]', 'bg-[#3AC24E]')
         "
+        (mouseleave)="handleReset()"
       >
         パターン１
       </div>
       <div
-        (click)="
+        (mouseenter)="
           handleChangeColor('text-[#F8CC16]', 'bg-[#F8CC16]', 'bg-[#002D75]')
         "
+        (mouseleave)="handleReset()"
       >
         パターン２
       </div>
       <div
-        (click)="
+        (mouseenter)="
           handleChangeColor('text-[#1AC7DA]', 'bg-[#1AC7DA]', 'bg-[#09345C]')
         "
+        (mouseleave)="handleReset()"
       >
         パターン３
       </div>

@@ -53,12 +53,14 @@ export class AppComponent {
 
   handleChangeColor(color: string, circleColor: string, bgColor: string): void {
     console.log(this.color, this.circleColor, this.bgColor);
-    // this.color = `text-[${color}]`;
-    // this.circleColor = `bg-[${color}]`;
-    // this.bgColor = `bg-[${bgColor}]`;
-    console.log(this.color, this.circleColor, this.bgColor);
     this.color = color;
     this.circleColor = circleColor;
     this.bgColor = bgColor;
+  }
+
+  handleReset() {
+    this.color = `text-[#DE1618]`;
+    this.circleColor = `bg-[#DE1618]`;
+    this.bgColor = `bg-[#352E95]`;
   }
 }
