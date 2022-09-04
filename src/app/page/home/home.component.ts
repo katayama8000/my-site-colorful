@@ -5,9 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit {
-  color: string = `text-[#DE1618]`;
-  circleColor: string = `bg-[#DE1618]`;
-  bgColor: string = `bg-[#352E95]`;
+  color: string = `text-[#f9d716]`;
+  circleColor: string = `bg-[#f9d716]`;
+  bgColor: string = `bg-[#0058a3]`;
 
   constructor() {}
   ngOnInit(): void {}
