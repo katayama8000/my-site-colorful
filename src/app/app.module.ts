@@ -11,6 +11,7 @@ import { TitleComponent } from './component/title/title.component';
 import { WorkComponent } from './page/work/work.component';
 import { HomeComponent } from './page/home/home.component';
 import { AnimationComponent } from './page/animation/animation.component';
+import { AboutMeComponent } from './page/about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AnimationComponent } from './page/animation/animation.component';
     WorkComponent,
     HomeComponent,
     AnimationComponent,
+    AboutMeComponent,
   ],
   imports: [
     BrowserModule,

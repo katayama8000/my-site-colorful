@@ -1,13 +1,11 @@
 <div>
   <div class="py-4">
-    <a routerLink="/work">
-      <span
-        class="cursor-pointer text-3xl font-bold {{ color }} hover:underline"
-        (click)="handleWindowOpen()"
-      >
-        {{ title }}
-      </span>
-    </a>
+    <span
+      class="cursor-pointer text-3xl font-bold {{ color }} hover:underline"
+      (click)="handleWindowOpen()"
+    >
+      {{ title }}
+    </span>
     <div class="py-2 {{ color }}">{{ description }}</div>
   </div>
 </div>

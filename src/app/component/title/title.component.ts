@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-title',
@@ -10,8 +11,9 @@ export class TitleComponent implements OnInit {
   @Input() url?: string;
   @Input() color?: string;
   @Input() routerLink?: string;
+  @Output() textColor = new EventEmitter<string>();
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
@@ -19,7 +21,7 @@ export class TitleComponent implements OnInit {
     if (this.url) {
       window.open(this.url);
     } else {
-      //alert('URLが設定されていません');
+      this.router.navigate([this.routerLink]);
     }
   }
 }

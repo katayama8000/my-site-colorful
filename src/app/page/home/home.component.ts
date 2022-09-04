@@ -22,8 +22,9 @@ export class HomeComponent implements OnInit {
     {
       title: 'About',
       description: 'Brief introduction about me',
-      routerLink: 'about',
+      routerLink: 'aboutme',
     },
+    { title: 'Works', description: 'What I have build', routerLink: 'work' },
     {
       title: 'Note',
       description: 'Anything blog',
@@ -39,7 +40,7 @@ export class HomeComponent implements OnInit {
       description: 'Teck blog',
       url: 'https://zenn.dev/tattu',
     },
-    { title: 'Works', description: 'What I have build', routerLink: 'work' },
+
     {
       title: 'Git hub',
       description: 'I try to write code everyday',
