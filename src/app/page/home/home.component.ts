@@ -10,9 +10,7 @@ export class HomeComponent implements OnInit {
   bgColor: string = `bg-[#352E95]`;
 
   constructor() {}
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+  ngOnInit(): void {}
 
   protected titles: {
     title: string;
