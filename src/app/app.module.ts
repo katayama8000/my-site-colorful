@@ -10,9 +10,16 @@ import { TitleComponent } from './component/title/title.component';
 //pages
 import { WorkComponent } from './page/work/work.component';
 import { HomeComponent } from './page/home/home.component';
+import { AnimationComponent } from './page/animation/animation.component';
 
 @NgModule({
-  declarations: [AppComponent, TitleComponent, WorkComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    TitleComponent,
+    WorkComponent,
+    HomeComponent,
+    AnimationComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

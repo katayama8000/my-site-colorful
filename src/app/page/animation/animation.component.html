@@ -1,0 +1,9 @@
+<nav>
+  <button type="button" (mouseenter)="toggle()" (mouseout)="toggle()">
+    hover here to change
+  </button>
+</nav>
+
+<div [@openClose]="isOpen ? 'open' : 'closed'">
+  <p>The box is now {{ isOpen ? "Open" : "Closed" }}!</p>
+</div>
