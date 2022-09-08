@@ -11,22 +11,29 @@ export class WorkComponent implements OnInit {
 
   protected createdApp = [
     {
-      title: 'Angular',
+      title: 'invoice',
       description:
-        'Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations.',
+        'This is a simple invoice application. You can create, edit, and delete invoices. You can also export invoices to PDF format.',
       imageUrl: 'https://angular.io/assets/images/logos/angular/angular.svg',
+      link: 'https://invoice-app-d6e30.web.app/',
     },
     {
-      title: 'Angular',
+      title: 'memory with music',
       description:
-        'Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations.',
+        'This is a simple memory game. You can play the game with music. You can also change the music.',
       imageUrl: 'https://angular.io/assets/images/logos/angular/angular.svg',
+      link: 'https://memory-with-music.vercel.app/',
     },
     {
-      title: 'Angular',
+      title: 'snake game',
       description:
-        'Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations.',
+        'snake game. I hope You can enjoy it. I hope you can enjoy it.',
       imageUrl: 'https://angular.io/assets/images/logos/angular/angular.svg',
+      link: 'https://snake-game-react-pgp9dpqo3-katayama8000.vercel.app/',
     },
   ];
+
+  protected handleWindowOpen(url: string) {
+    window.open(url);
+  }
 }
