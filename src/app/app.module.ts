@@ -14,6 +14,7 @@ import { AnimationComponent } from './page/animation/animation.component';
 import { AboutMeComponent } from './page/about-me/about-me.page';
 import { PageContentComponent } from './layout/page-content/page-content.component';
 import { CreatedAppComponent } from './component/created-app/created-app.component';
+import { PageNotFoundComponent } from './page/page-not-found/page-not-found.page';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { CreatedAppComponent } from './component/created-app/created-app.compone
     AboutMeComponent,
     PageContentComponent,
     CreatedAppComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
