@@ -1,5 +1,5 @@
 <header></header>
-<main class="{{ bgColor }} px-4 py-14 sm:p-20">
+<div class="{{ bgColor }} px-4 py-14 sm:p-20">
   <div class="max-w-xl m-auto text-white">
     <div class="pb-10">
       <div class="h-[100px] w-[100px] rounded-full {{ circleColor }}"></div>
@@ -54,17 +54,17 @@
     </div>
     <hr class="py-10" />
     <ng-container *ngFor="let title of titles">
-      <app-title
+      <app-title-component
         [title]="title.title"
         [description]="title.description"
         [url]="title.url"
         [color]="color"
         [routerLink]="title.routerLink"
-      ></app-title>
+      ></app-title-component>
     </ng-container>
   </div>
   <router-outlet></router-outlet>
-</main>
+</div>
 <footer class="{{ bgColor }}">
   <hr />
   <div class="p-5 text-center {{ color }}">&copy;2022 katayama8000</div>

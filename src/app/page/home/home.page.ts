@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
+  templateUrl: './home.page.html',
 })
 export class HomeComponent implements OnInit {
   color: string = `text-[#f9d716]`;

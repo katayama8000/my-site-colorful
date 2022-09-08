@@ -8,10 +8,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //components
 import { TitleComponent } from './component/title/title.component';
 //pages
-import { WorkComponent } from './page/work/work.component';
-import { HomeComponent } from './page/home/home.component';
+import { WorkComponent } from './page/work/work.page';
+import { HomeComponent } from './page/home/home.page';
 import { AnimationComponent } from './page/animation/animation.component';
-import { AboutMeComponent } from './page/about-me/about-me.component';
+import { AboutMeComponent } from './page/about-me/about-me.page';
+import { PageContentComponent } from './layout/page-content/page-content.component';
+import { CreatedAppComponent } from './component/created-app/created-app.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { AboutMeComponent } from './page/about-me/about-me.component';
     HomeComponent,
     AnimationComponent,
     AboutMeComponent,
+    PageContentComponent,
+    CreatedAppComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,9 @@
+<div class="max-w-xl m-auto text-white bg-green-300">
+  <ng-container *ngFor="let app of createdApp">
+    <app-created-app-component
+      [title]="app.title"
+      [description]="app.description"
+      [imageUrl]="app.imageUrl"
+    ></app-created-app-component>
+  </ng-container>
+</div>

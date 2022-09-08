@@ -2,7 +2,7 @@ import { Router } from '@angular/router';
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-title',
+  selector: 'app-title-component',
   templateUrl: './title.component.html',
 })
 export class TitleComponent implements OnInit {
