@@ -9,7 +9,12 @@ export class WorkComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  protected createdApp = [
+  protected createdApp: {
+    title: string;
+    description: string;
+    imageUrl: string;
+    link: string;
+  }[] = [
     {
       title: 'invoice',
       description:
