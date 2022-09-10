@@ -5,11 +5,10 @@ import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  providers: [Title], // ［1］Titleサービスを登録
+  providers: [Title],
 })
 export class AppComponent {
   constructor(private router: Router, private title: Title) {
-    // ［2］タイトルを設定
     this.title.setTitle('My-Site');
   }
 }
