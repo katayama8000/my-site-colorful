@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { meta } from './../../meta/meta';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -9,8 +11,10 @@ export class HomeComponent implements OnInit {
   circleColor: string = `bg-[#f9d716]`;
   bgColor: string = `bg-[#0058a3]`;
 
-  constructor() {}
-  ngOnInit(): void {}
+  constructor(private meta: Meta) {}
+  ngOnInit(): void {
+    this.meta.addTag(meta);
+  }
 
   protected titles: {
     title: string;
@@ -22,9 +26,15 @@ export class HomeComponent implements OnInit {
     {
       title: 'About',
       description: 'Brief introduction about me',
-      routerLink: 'aboutme',
+      //routerLink: 'aboutme',
+      url: 'https://my-site-steel-psi.vercel.app/about',
     },
-    { title: 'Works', description: 'What I have build', routerLink: 'work' },
+    {
+      title: 'Works',
+      description: 'What I have build',
+      //routerLink: 'work',
+      url: 'https://my-site-steel-psi.vercel.app/works',
+    },
     {
       title: 'Note',
       description: 'Anything blog',
